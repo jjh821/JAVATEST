@@ -2,7 +2,16 @@ package exam;
 
 public class AirplaneMoney {
 
-	public static void main(String[] args) {
+		public static int getFlightFare( int age) {
+				if (age >= 19) {
+					return 30_0000;
+				}
+				else {
+					return 10_0000;
+				}
+		}
+		
+		public static void main(String[] args) {
 		int money = 900_000;
 		
 		int father = 40 ;
@@ -56,7 +65,11 @@ public class AirplaneMoney {
 		
 		totalfare = (adultcount * adultOnewayFlightFare) + (kidcount * kidOnewayFlightFare);
 		
-		
+		int filghtFare = 0;
+		filghtFare +=getFlightFare(father);
+		filghtFare +=getFlightFare(mother);
+		filghtFare +=getFlightFare(daughter);
+
 		
 		if (money >= totalfare) {
 		    System.out.println("결과: 여행 가능!");
