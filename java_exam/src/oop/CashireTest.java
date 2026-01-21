@@ -5,7 +5,7 @@ public class CashireTest {
         Cashier cashier = new Cashier();
 
         // 1. 손님 입장
-        cashier.isCustomer = true;
+        cashier.isCustomer = false;
         cashier.amountMoney = 10000;
         cashier.CheckoutCustomer();
 
