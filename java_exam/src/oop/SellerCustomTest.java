@@ -5,6 +5,7 @@ public class SellerCustomTest {
 		Customer customer = new Customer();
 		
 		seller.isStock = 100; // 재고 설정
+		customer.bagWeight = 3000; // 무게 상한 설정
 		customer.wallte = 10000; // 지갑 돈 설정
 		
 
