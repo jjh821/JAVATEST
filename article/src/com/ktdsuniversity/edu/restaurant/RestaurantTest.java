@@ -51,13 +51,13 @@ import com.ktdsuniversity.edu.restaurant.restaurant.Restaurant;
 
 public class RestaurantTest {
 	public static void main(String[] args) {
-		// 1. 초기 세팅
+		// 1. 식당구성
 		Menu menu = new Menu("치킨", 40, 20000, "소주", 19.0, 5000);
 		Restaurant rest = new Restaurant();
 		rest.setMenu(menu);
 		rest.setAccount(45000);
 
-		Customer kim = new Customer("김철수", 100000);
+		Customer kim = new Customer("김철수", 100000); // 손님 구성 이름,지갑
 		
 		
 
