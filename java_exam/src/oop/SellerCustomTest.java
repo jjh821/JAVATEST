@@ -7,11 +7,10 @@ public class SellerCustomTest {
 		seller.isStock = 100; // 재고 설정
 		customer.bagWeight = 3000; // 무게 상한 설정
 		customer.wallte = 10000; // 지갑 돈 설정
-		
 
-		seller.isSell(5);	// 5개 판매
+		seller.isSell(27);	// 5개 판매
 		System.out.println("");
-		customer.Byecount(5); // 5개 구입
+		customer.Byecount(6); // 5개 구입
 		
 		
 	}

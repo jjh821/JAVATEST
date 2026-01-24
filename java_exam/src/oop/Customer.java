@@ -6,15 +6,14 @@ public class Customer {
 	int shopBagCount = 0; //현재 상품 개수
 	int bagWeight; // 무게 상한선
 	int wallte; // 지갑
+	
 	public void Byecount(int num) {
 		if (wallte < (num * price)) {
 			System.out.println("돈이 부족합니다.");
-			printStatus();
 			return;
 		}
 		if ((currentWeight + (num * proWeight)) > bagWeight) {
 			System.out.println("더 이상 장바구니를 들 수 없습니다.");
-			printStatus();
 			return;
 		}
 		wallte -= (num * price);

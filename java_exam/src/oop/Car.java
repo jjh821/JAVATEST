@@ -32,6 +32,19 @@ public class Car {
 	 */
 	int speed; //메소드가 아니라 클래스 안쪽에 적음= 인스턴스 필드
 	//인스턴트 메소드.
+	
+	
+	String name;	//맴버변수
+	/**
+	 * 
+	 * 일반적으로 생성자의 타입과 이름은 맴버변수의 타입과 이름이 같다
+	 */
+	public Car(String name) { //지역변수
+		// 맴버변수  = 파라미터;  란 얘기 그럼 car test 파일에서 오류가 날것 
+		this.name = name;
+	}
+	
+			
 	/**
 	 * 현재 엔진의 상태에 따라서 시동을 켜거나 끈다
 	 * 시동이 걸리면 isStartEngine 의 값이 true 꺼지면 false 가 된다.

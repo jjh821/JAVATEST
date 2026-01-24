@@ -8,7 +8,7 @@ public class CarTest {
 		//int sp;
 		//System.out.println(sp);
 		
-		Car kona = new Car();
+		Car kona = new Car("KONA");
 		System.out.println(kona);
 		kona.pressEngineStartButton();// 추가하면 엔진 스타트 버튼 메소드를 호출해서 시동을 켬
 		kona.pressGasolinPedal(20); // speed 30
@@ -23,7 +23,7 @@ public class CarTest {
 		
 		
 		
-		Car carnival = new Car(); // 카니발의 엔진 상태와 스피드를 출력
+		Car carnival = new Car("CARNIVAL"); // 카니발의 엔진 상태와 스피드를 출력
 		System.out.println(carnival);
 		
 		carnival.pressGasolinPedal(200);
