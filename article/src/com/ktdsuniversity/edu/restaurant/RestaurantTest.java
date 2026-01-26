@@ -60,10 +60,9 @@ public class RestaurantTest {
 		Customer kim = new Customer("김철수", 100000); // 손님 구성 이름,지갑
 		
 		
-
 		// 2. 주문 실행 (음식 1개, 술 1병)
-		rest.takeOrder(kim, 1, 2);
-		rest.takeOrder(kim, 50, 1);
+		rest.takeOrder(kim, 10, 42);
+		
 		// 3. 결과 확인
 		System.out.println("--- 주문 결과 ---");
 		System.out.println("손님 배부름: " + kim.getFull());
