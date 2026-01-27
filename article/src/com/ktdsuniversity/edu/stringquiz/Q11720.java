@@ -3,7 +3,33 @@ package com.ktdsuniversity.edu.stringquiz;
 import java.util.Scanner;
 
 public class Q11720 {
+/** 예시
+ * int length = numString.length();
 
+int radix =1;
+for (int i= 1; i < length(); i++;){
+	radix * =10;
+}
+long num = Long.praseLong(numString);
+int divResult = 0;
+int sum = 0;
+while (ture){
+	divResult = (int) (num/radix);
+	sum += divResult;
+
+	
+	num = (divResult * radix);
+	radix /= 10;
+	
+	if (radix == 0){
+	    break;
+	}
+	System.out.println(sum);
+ * 
+ * 
+ * 
+ */
+	
 	private Scanner keyboard;
 	
 	public Q11720() {
@@ -38,3 +64,4 @@ public class Q11720 {
 	}
 
 }
+
