@@ -4,7 +4,7 @@ public class MultiDimensionArray {
 
 	public static void main(String[] args) {
 		
-		int[][][][][][][][][][][][] a = new int[10][][][][][][][][][][][][];
+	
 		int[][] arr = new int[3][3];
 		int[][] arr2 = new int[][] {{0, 0, 0},{0,0,0}, {0,0,0} };
 		int[][] arr3 =  {{0, 0, 0},{0,0,0}, {0,0,0} };
