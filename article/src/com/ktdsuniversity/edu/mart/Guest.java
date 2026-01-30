@@ -41,7 +41,11 @@ public class Guest {
 		this.discount = discount;
 	}
 	
-	
+	@Override
+	public String toString() {
+		
+		return "잔액: " + this.money + "남은 포인트" + this.point ;
+	}
 
 	
 }
