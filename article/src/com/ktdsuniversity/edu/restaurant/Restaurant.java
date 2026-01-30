@@ -1,7 +1,5 @@
-package com.ktdsuniversity.edu.restaurant.restaurant;
+package com.ktdsuniversity.edu.restaurant;
 
-import com.ktdsuniversity.edu.restaurant.customer.Customer;
-import com.ktdsuniversity.edu.restaurant.menu.Menu;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package com.ktdsuniversity.edu.restaurant.menu;
+package com.ktdsuniversity.edu.restaurant;
 
 public class Menu {
 	/**

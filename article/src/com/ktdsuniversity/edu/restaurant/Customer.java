@@ -1,4 +1,4 @@
-package com.ktdsuniversity.edu.restaurant.customer;
+package com.ktdsuniversity.edu.restaurant;
 
 
 

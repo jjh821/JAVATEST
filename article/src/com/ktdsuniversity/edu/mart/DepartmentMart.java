@@ -1,9 +1,9 @@
 package com.ktdsuniversity.edu.mart;
 //백화점
-public class DepartmentMart  extends CVSMart{
+public class DepartmentMart  extends Mart{
 
-	public DepartmentMart(int productPrice) {
-		super(productPrice); 
+	public DepartmentMart(String productName,int productPrice) {
+		super(productName,productPrice); 
 	}
 	
 	
@@ -25,21 +25,20 @@ public class DepartmentMart  extends CVSMart{
 		int point = guest.getPoint();
 		// 백화점은 10,000점 이상일 때만 사용 가능 (편의점의 100점 규칙을 덮어씀)
 		if (point >= 10000) {
-			guest.usePoint(point);
 			return point;
 		}
 		return 0;
 		}
 
-		@Override
+		@Override	
 		public int discount(Guest guest, int amount) {
 			// VVIP는 10%  VIP 3% 
 			if (guest instanceof VVIP) {
-				return (int) (amount * 0.1);
+				return (int) (amount * 0.9);
 			} else if (guest instanceof VIP) {
-				return (int) (amount * 0.03);
+				return (int) (amount * 0.97);
 			}
-			return 0;
+			return amount;
 		}
 
 		@Override
@@ -52,7 +51,8 @@ public class DepartmentMart  extends CVSMart{
 			} else {//일반마트도 마찬가지;
 				guest.addPoint((int) (amount * 0.005));
 			}
-	
+			int point = (int) (amount * 0.005); 
+			guest.addPoint(point);
 	
 		}
 }

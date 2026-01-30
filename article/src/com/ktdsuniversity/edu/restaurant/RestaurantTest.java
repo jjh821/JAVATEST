@@ -1,7 +1,5 @@
 package com.ktdsuniversity.edu.restaurant;
-import com.ktdsuniversity.edu.restaurant.customer.Customer;
-import com.ktdsuniversity.edu.restaurant.menu.Menu;
-import com.ktdsuniversity.edu.restaurant.restaurant.Restaurant;
+
 /**
  * 
  * 식당- 손님 구현

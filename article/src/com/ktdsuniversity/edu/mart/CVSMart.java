@@ -3,8 +3,8 @@ package com.ktdsuniversity.edu.mart;
 
 public class CVSMart extends Mart{
 
-	public CVSMart(int productPrice) {
-		super(productPrice);
+	public CVSMart(String productName,int productPrice) {
+		super(productName,productPrice);
 	}
 		 
 			// 백화점인지  보고 할인적용
@@ -28,7 +28,6 @@ public class CVSMart extends Mart{
 	public int usePoint(Guest guest) {
 			int point = guest.getPoint();
 			if (point >= 100) {
-			guest.usePoint(point);
 			return point;
 			}	
 			return 0;
