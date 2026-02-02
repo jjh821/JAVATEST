@@ -23,7 +23,6 @@ public class Menu {
 		this.alcoholprice = alcoholprice;
 	}
 
-	// Getter & Setter (탭 간격 및 수직 정렬 적용)
 	public String getFoodname() {
 		return foodname;
 	}
