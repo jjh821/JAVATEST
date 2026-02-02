@@ -1,11 +1,14 @@
 package com.ktdsuniversity.edu.restaurant;
 
+
+
 public class Restaurant {
 
 	
 	private int account;
 	private Menu[] menuArray;
-
+	
+	//private List<String> menus = new ArrayList
 	private final int MAX_FULLNESS = 100;
 	private final double MAX_DRUNK = 10.0;
 
@@ -68,6 +71,9 @@ public class Restaurant {
 	public void setMenuArray(Menu[] menuArray) {
 		this.menuArray = menuArray;
 	}
+//	public void setMenuArray(Menu[] menuArray) {
+//		this.menuArray = menuArray;
+//	}
 
 	public void setAccount(int account) {
 		this.account = account;
