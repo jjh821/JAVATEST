@@ -13,10 +13,10 @@ public class CoffeeShopTest {
 //		CoffeeShop starbucks = new CoffeeShop(hotCoffee, iceCoffee);
 		CoffeeShop starbucks = new CoffeeShop();
 		
-		int price = starbucks.orderCoffe();
+		int price = starbucks.orderCoffe(CoffeeOrder.HOT);
 		System.out.println(price);
 		
-		price = starbucks.orderCoffee(2);
+		price = starbucks.orderCoffee(CoffeeOrder.HOT);
 		System.out.println(price);
 		
 		

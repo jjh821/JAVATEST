@@ -1,6 +1,37 @@
 package com.ktdsuniversity.edu.file;
 
+import java.io.File;
+
 public class Recursive {
+	
+	public void deleteDirectory(File target) {
+		if (target.isFile()) {
+			System.out.println(target.getAbsolutePath());
+			target.delete();
+		}else if(target.isDirectory()) {
+			// 폴더내부의 목록을 조회
+			File[] children = target.listFiles();
+			
+			
+			for (File child: children) {
+				this.deleteDirectory(child);
+			}
+			System.out.println(target.getAbsolutePath());
+			target.delete();
+		}
+	}
+	
+	public void printFiles(File target) {
+		if (target.isFile()) {
+			System.out.println(target.getAbsolutePath());
+		}else if(target.isDirectory()) {
+			// 폴더내부의 목록을 조회
+			File[] children = target.listFiles();
+			for (File child: children) {
+				this.printFiles(child);
+			}
+		}
+	}
 	
 	public int sumToZero(int start) {
 		// start ==> 5
@@ -37,5 +68,10 @@ public class Recursive {
 //		r.printNumber(2000);// 결과 ==> 2000 ~ 0
 		int  result = r.sumToZero(5);
 		System.out.println(result);
+		
+//		File root = new File("C://dev_programs");
+//		r.printFiles(root);
+		File root = new File("C:\\Users\\User\\Documents\\삭제 대상");
+		r.deleteDirectory(root);
 	}
 }

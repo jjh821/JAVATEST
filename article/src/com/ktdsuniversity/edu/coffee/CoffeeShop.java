@@ -1,6 +1,12 @@
 package com.ktdsuniversity.edu.coffee;
 
 public class CoffeeShop {
+	
+	
+	public static final int HOT = 1;
+	public static final int ICE = 2;
+	
+	
 	/**
 	 * 커피숍에서 판매하는 따뜻한 아메리카노
 	 * 
@@ -29,9 +35,16 @@ public class CoffeeShop {
 	 * 가장 첫번쨰 메뉴를 한개 주문한다
 	 * @return
 	 */
-	public int orderCoffe() {
-		int price = this.orderCoffee( 1 );
-		return price;
+	public int orderCoffee(CoffeeOrder coffeeorder) {
+		
+		if(coffeeorder == CoffeeOrder.HOT) {
+			return this.menu = this.hot;
+		}else if(coffeeorder == CoffeeOrder.ICE) {
+			return this.menu; = this.ice
+		}
+		
+		
+	
 	}
 	
 	
@@ -42,7 +55,7 @@ public class CoffeeShop {
 	 * @return
 	 */
 	
-	public int orderCoffee(int menu) {
+	public int orderCoffee(int coffeeor) {
 		int price = this.orderCoffee(menu , 1);
 		return price;
 	}
