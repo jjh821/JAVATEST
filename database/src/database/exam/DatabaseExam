@@ -1,4 +1,4 @@
---1. 모든 사원의 모든 정보를 조회한다. 나옴
+--1. 모든 사원의 모든 정보를 조회한다. 107개 출력
 SELECT  EMPLOYEE_ID
      , FIRST_NAME
      , LAST_NAME
@@ -13,7 +13,7 @@ SELECT  EMPLOYEE_ID
   FROM EMPLOYEES
 ;
  
---2. 부서가 없는 사원의 모든 정보를 조회한다. 나옴
+--2. 부서가 없는 사원의 모든 정보를 조회한다.  1개 출력
 SELECT EMPLOYEE_ID
      , FIRST_NAME
      , LAST_NAME
@@ -28,7 +28,7 @@ SELECT EMPLOYEE_ID
   FROM EMPLOYEES  
  WHERE DEPARTMENT_ID IS NULL 
 ;
---3. 직무가 없는 사원의 모든 정보를 조회한다. JOB ID 가 아닌가? 아니구나 NOT NULL 이라 0개구나
+--3. 직무가 없는 사원의 모든 정보를 조회한다. JOB ID 가 아닌가? 아니구나 NOT NULL 이라 0개구나 0개출력
 SELECT EMPLOYEE_ID
      , FIRST_NAME
      , LAST_NAME
@@ -44,7 +44,7 @@ SELECT EMPLOYEE_ID
   WHERE JOB_ID IS NULL
 
 ;
---4. 부서와 직무가 모두 있는 사원의 모든 정보를 조회한다. 둘다 NOT NULL이 기본값인데 안쓰고할수가 있나 왜 106개?
+--4. 부서와 직무가 모두 있는 사원의 모든 정보를 조회한다. 둘다 NOT NULL이 기본값인데 안쓰고할수가 있나 왜 106개 출력?
 SELECT EMPLOYEE_ID
      , FIRST_NAME
      , LAST_NAME
@@ -63,7 +63,7 @@ SELECT EMPLOYEE_ID
 
 
 
---5. 부서장이 없는 모든 부서의 모든 정보를 조회한다. 나옴
+--5. 부서장이 없는 모든 부서의 모든 정보를 조회한다. 16개 출력
 SELECT DEPARTMENT_ID
 	 , DEPARTMENT_NAME
 	 , MANAGER_ID
@@ -71,7 +71,7 @@ SELECT DEPARTMENT_ID
   FROM DEPARTMENTS 
  WHERE MANAGER_ID IS NULL
 ;
---6. 부서장이 있는 모든 부서의 모든 정보를 조회한다. 나옴
+--6. 부서장이 있는 모든 부서의 모든 정보를 조회한다. 11개 출력
 SELECT DEPARTMENT_ID
 	 , DEPARTMENT_NAME
 	 , MANAGER_ID
@@ -79,11 +79,11 @@ SELECT DEPARTMENT_ID
   FROM DEPARTMENTS 
  WHERE MANAGER_ID IS NOT NULL
 ;
---7. 사원의 이름만 조회한다. 나옴
+--7. 사원의 이름만 조회한다. 나옴 107개 출력
 SELECT FIRST_NAME
   FROM EMPLOYEES
 ;
---8. 모든 지역의 모든 정보를 조회한다. 나옴
+--8. 모든 지역의 모든 정보를 조회한다. 23 출력
 SELECT LOCATION_ID
 	 , STREET_ADDRESS
 	 , POSTAL_CODE
@@ -92,7 +92,7 @@ SELECT LOCATION_ID
 	 , COUNTRY_ID
   FROM  LOCATIONS
 ;
---9. 지역이 없는 모든 부서의 정보를 조회한다.리전 ID를 NULL로 해버리면 아무것도 안뜬다
+--9. 지역이 없는 모든 부서의 정보를 조회한다.리전 ID를 NULL로 해버리면 아무것도 안뜬다 0개출력
 SELECT DEPARTMENT_ID
 	 , DEPARTMENT_NAME
 	 , MANAGER_ID
